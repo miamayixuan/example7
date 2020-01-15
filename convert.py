@@ -30,7 +30,6 @@ with open('output.csv', 'w') as f:
 		#       date formats can be found at https://strftime.org/
 		date = datetime.datetime.strptime(raw_date, "%m/%d/%Y")
 		new_date = date.strftime("%-d-%b-%y")
-		print(new_date)
 		
 		# 5. write a new row of data with the transformed date and value for "approve" 
 		writer.writerow([new_date, approve])
